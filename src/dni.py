@@ -1,5 +1,5 @@
 
-from tablaControlDni import TablaControlDni
+from src.tablaControlDni import TablaControlDni
 
 
 class Dni:
