@@ -32,7 +32,7 @@ class Dni:
         self.numero_sano(self.__check_dni_lenght() and self.__check_dni_number())
         return self.get_numero_sano()
     
-    def check_cif(self)
+    def check_cif(self):
         return self.__check_dni_number and self.__check_letra()
     
     def check_letra(self):
@@ -42,18 +42,13 @@ class Dni:
 
         else:
             return False
-            
-
-
+        
     def dar_letra(self):
 
         if self.get_numero_sano():
             return self.tabla.calcular_resto(self.__get_parte_numerica())
         else:
             return None
-
-
-
 
     def __check_dni_lenght(self):
         return len(self.get_dni()) == 9
@@ -75,6 +70,6 @@ class Dni:
 
     def __check_letra_vale(self):
 
-        if self.get_numero_sano:
+        if self.get_numero_sano():
             return self.__get_parte_alfabetica_dni() == self.dar_letra()
     
